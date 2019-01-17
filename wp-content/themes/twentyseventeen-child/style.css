@@ -1,0 +1,818 @@
+/*---------------------------------------------------------------------------*\
+ Theme Name:   Formation au Numérique - AFA-Multimedia
+ Description:  Theme enfant de TwentySeventeen pour le site Formation au numérique par AFA-Multimedia
+ Author:       AFA-Multimedia
+ Author URI:   http://afa-multimedia.com/
+ Template:     twentyseventeen
+ Version:      1.0.0
+ Tags:         
+ Text Domain:  formation-numerique-AFA-Multimedia
+\*---------------------------------------------------------------------------*/
+
+
+
+/*---------------------------------------------------------------------------*\
+		MENU
+\*---------------------------------------------------------------------------*/
+.home .navigation-top {
+	display:none;
+}	
+
+
+/*---------------------------------------------------------------------------*\
+		HOME PAGE
+\*---------------------------------------------------------------------------*/
+
+a:hover {
+	box-shadow:none !important;
+}
+
+.clear {
+	clear:both;
+}
+
+/* ** HEADER ** */
+.home header .site-branding {
+	/*margin-bottom:10em !important;*/
+}
+
+.home header.entry-header {
+	margin-bottom:2em !important;
+}
+
+.logo-site {
+	margin-bottom:4em;
+}
+
+.logo-site img {
+	display:block;
+	margin:auto;
+}
+
+body.has-header-image .site-title a {
+	color:#00344e;
+	font-size:1.66em;
+}
+body.has-header-image .site-title a:hover {
+	text-decoration:none;
+}
+
+.site-branding-text {
+	width:100%;
+}
+
+.site-title {
+	text-align:center;
+}
+
+.font-weight {
+	font-weight:200;
+}
+
+.letter-spacing {
+	letter-spacing:11px;
+}
+
+.site-description {
+	text-align:center;
+	color:#003352 !important;
+}
+
+.home .menu-scroll-down {
+	position:initial;
+	text-align:center;
+	color:#666;
+}
+
+/* ** INTRODUCTION ** */
+.home .panel-content .wrap {
+	width:100%;
+	max-width:none;
+	background:#10354b;
+	color:white;
+	padding-left:10%;
+	padding-right:10%;
+}
+.home .panel-content .wrap h2 {
+	color:white;
+	text-align:center;
+	font-size:30px;
+	font-weight:normal;
+}
+.home .panel-content .wrap .edit-link {
+	display:none;
+}
+.home .panel-content .wrap .entry-content p {
+    font-size: 1.05em;
+    margin-bottom: 0.5rem;
+	letter-spacing: 0.6px;
+}
+.home .panel-content .wrap .entry-content h3 {
+	font-size:1.65rem;
+	padding: 0.5em 0 0.2em 0;
+}
+.bouton-actu {
+	float:right;
+    color:white;
+    text-decoration:none;
+    border:2px solid white;
+    padding:0.5em 1em;
+    margin-top:1em;
+	transition:all 0.5s !important;
+}
+.panel-content .wrap {
+    padding-bottom: 4.5em;
+    padding-top: 4.5em;
+}
+.bouton-actu:hover {
+	border-radius:15px;
+	color:white !important;
+	background:rgba(255, 255, 255, 0.15);
+}
+.home .entry-header img {
+	display:block;
+	margin:4em auto 0 auto;
+}
+/* ** CONTENT INFO ** */
+.info-titre {
+    border: 2px solid #10354b;
+	width: 80%;
+	margin: 10em auto 8em auto;
+	padding: 2em;
+	position: relative;
+	box-sizing: border-box;
+	padding-bottom: 4em;
+}
+
+.info-titre ul {
+	margin: 0;
+	position: absolute;
+	width: 96%;
+	box-sizing: border-box;
+}	
+
+.info-titre li {
+	list-style:none;
+	font-size:25px;
+    font-weight:600;
+    color:#10354b;
+}
+
+.logo-formation {
+	width: 200px;
+	display: block;
+	margin: auto;
+	margin-top: -100px;
+}
+.wrap_logo {
+	position:absolute;
+	width:96%;
+}
+.info-titre .titre-pro {
+	float:left;
+}
+.info-titre .titre-part {
+	float:right;
+}
+
+.content-wrap {
+	width:80%;
+	margin:auto;
+}
+
+
+.intro-text {
+    text-align:center;
+    font-size:25px;
+    margin:2em 0;
+}
+
+/* BOX FORMATION */
+.grid figure {
+	position: relative;
+	float: left;
+	overflow: hidden;
+	margin: 10px 1%;
+	width: 48%;
+	cursor: pointer;
+}
+
+.grid figure img {
+	display: block;
+	opacity: 0.8;
+}
+
+.grid figure figcaption {
+	padding: 2em;
+	color: #fff;
+	font-size: 1.25em;
+	backface-visibility: hidden;
+}
+
+.grid figure figcaption::before,
+.grid figure figcaption::after {
+	pointer-events: none;
+}
+
+.grid figure figcaption,
+.grid figure figcaption > a {
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+figure.effect-color-01 {
+	background:#dc8686;
+}
+figure.effect-color-02 {
+	background:#bf9474;
+}
+figure.effect-color-03 {
+	background:#be910f;
+}
+figure.effect-color-04 {
+	background:#afab55;
+}
+
+figure.effect-slide img {
+	max-width: none;
+	width: calc(100% + 20px);
+	transition: opacity 0.35s, transform 0.35s;
+	transform: translate3d(-20px,0,0);
+	backface-visibility: hidden;
+}
+
+figure.effect-slide:hover img {
+	opacity: 0.4;
+	transform: translate3d(0,0,0);
+}
+
+figure.effect-slide h2 {
+	position: relative;
+	overflow: hidden;
+	padding: 0.5em 0;
+	color:white;
+	font-weight:600;
+    font-size:28px;
+}
+
+figure.effect-slide h2::after {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 3px;
+	background: #fff;
+	content: '';
+	transition: transform 0.35s;
+	transform: translate3d(-100%,0,0);
+}
+
+figure.effect-slide:hover h2::after {
+	transform: translate3d(0,0,0);
+}
+
+figure.effect-slide p {
+	opacity: 0;
+	margin-top: -10px;
+	transition: all 0.35s;
+	transform: translate3d(100%,0,0);
+}
+
+figure.effect-slide:hover p {
+	opacity: 1;
+	transform: translate3d(0,0,0);
+}
+
+/* ** CONTACT ** */
+.content-contact {
+	background:#10354b;
+	color:white;
+	margin-top:6em;
+	padding:4em 0;
+}
+
+.wrap-contact {
+	width:80%;
+	margin:auto;
+}
+
+.content-contact h3 {
+	color:white;
+	text-align:center;
+	font-size:30px;
+	font-weight:600;
+}
+
+.intro-contact {
+	text-align:center;
+}
+
+.line-white {
+	width:10%;
+	margin:auto;
+	display:block;
+	height:3px;
+	background:white;
+	margin-bottom:3em;
+}
+
+.line-white-02 {
+	width:20%;
+	margin:auto;
+	display:block;
+	height:3px;
+	background:white;
+	margin-bottom:2em;
+}
+
+.line-grey {
+	width:10%;
+	margin:auto;
+	display:block;
+	height:2px;
+	background:#333;
+	margin-bottom:3em;
+}
+
+.coord-content, .form-content {
+	width:50%;
+	float:left;
+}
+
+.form-nom, .form-prenom, .form-tel, .form-email {
+	width:50%;
+	float:left;
+}
+
+.form-sujet, .form-sujet select {
+	width:100%;
+}
+
+.home .wpcf7-form label {
+	color:white;
+	font-weight:400;
+	padding:5px;
+	width: 60%;
+}
+
+.home .wpcf7-form select {
+	width: 100%;
+}
+
+.home .wpcf7-form .wpcf7-submit {
+	background:#e55715;
+	font-weight:400;
+	font-size:17px;
+	transition:0.3s all;
+}
+
+.home .wpcf7-form .wpcf7-submit:hover {
+	background:#e38458;
+	color:#00344e;
+}
+
+.wrap-coord {
+	background:#628da7;
+	padding-bottom:1em;
+}
+
+.coord-content {
+	padding-right:2em;
+	margin-top:2em;
+}
+
+.wrap-coord p {
+	padding-left:3em;
+}
+
+.wrap-coord h4 {
+	color:white;
+	padding-left:1em;
+	font-weight:600;
+}
+
+/* ** RÉFÉRENCES ** */
+.content-ref {
+	/*background:rgba(0, 52, 78, 0.28);*/
+	padding:3em 5em;
+}
+
+.content-ref h3 {
+	text-align:center;
+	font-size:20px;
+	font-weight:500;
+}
+
+/** CONTACT **/
+.map{
+	width:100%;
+	height:200px;
+}
+
+.page-template-page-contact .wpcf7-form label,
+.page-template-page-contact .wpcf7-form select {
+	font-weight: normal;
+	width: 100%;
+}
+
+.wpcf7-form-control .wpcf7-list-item {
+	display: block;
+}
+
+.content-ref img {
+	transition: all 0.25s;
+}
+
+.content-ref img:hover {
+	opacity: 0.5;
+}
+
+
+/* ** FOOTER ** */
+.site-footer {
+    background: #10354b;
+	color:#fff;
+}
+.site-footer a {
+	color: #FFFFFF;
+    letter-spacing: 1px;
+    padding-bottom: 2px;
+}
+
+.site-footer a:hover {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.references {
+	padding:1em 2em 0 2em;
+	text-align:center;
+}
+.references img {
+	max-height: 100px;
+    width: inherit;
+    display: inline-block;
+    padding: 0 1em;
+    box-sizing: border-box;
+}
+hr {
+    background-color: #eee;
+    border: 0;
+    height: 1px;
+    margin-bottom: 0;
+}
+.site-info {
+    width: inherit;
+}
+
+/*---------------------------------------------------------------------------*\
+		AUTRE PAGE
+\*---------------------------------------------------------------------------*/
+.page-titre {
+	text-align:center;
+    margin-top:1.5em;
+	margin-bottom: 1em;
+    font-weight:600;
+    font-size:40px;
+	color: #fff;
+	text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+
+/* PAO */
+body .wrap-pao {
+	padding: 1em;
+}
+
+body .wrap-pao img {
+	width: 35%;
+}
+
+.wrap-pao .content-pao-01,
+.wrap-pao .content-pao-02,
+.wrap-pao .content-pao-03,
+.wrap-pao .content-pao-04 {
+	padding: 2em;
+	height: 100%;
+	background: rgba(170,130,34,0.1)
+}
+
+.wrap-pao h5 {
+	font-size: 15px;
+	font-weight: bold;
+	letter-spacing: 0px;
+}
+
+.wrap-pao p {
+	text-align: justify;
+	padding-left: 1.5em;
+	border-left: 2px solid #494949;
+	margin-top: 1.5em;
+}
+
+.contact_box {
+	width: 100%;
+	text-align: center;
+	background: grey;
+	height: 250px;
+	margin-top: 4em;
+}
+
+.contact_box p {
+	color: white;
+	font-size: 23px;
+	padding-top: 3.5em;
+	text-shadow: 0px 1px 1px rgba(0, 0, 0, 1);
+}
+
+.contact_box a, .other_form a {
+	background: #10354b;
+	color: white;
+	text-decoration: none;
+	border-radius: 2px;
+	padding: 0.4em 1.2em;
+	transition: all 0.25s;
+	display: inline-block;
+	margin-top: 1em;
+}
+
+.contact_box a:hover, .other_form a:hover {
+	background: #3F697F;
+}
+
+.contact_pao {
+	background: url('img/banner_formation_pao.jpg');
+	background-size: cover;
+	background-position: center;
+}
+
+.other_form_box {
+	margin: 4em 0 0 0;
+}
+
+.other_form {
+	padding: 1em;
+	border: 2px solid #aa8222;
+	height: 100%;
+}
+
+.other_form h5 {
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.other_form p {
+	font-size: 15px;
+	margin-top: 2em;
+}
+
+.other_form a {
+	font-size: 13px;
+}
+
+.button_box {
+	font-size: 13px;
+	color: black;	
+	padding: 0.4em 0.8em;
+	border-radius: 2px;
+	float: right;	
+}
+
+.color-btn {
+	background: #CCAD66;
+	transition: all 0.25s;
+}
+.color-btn:hover {
+	background: #AF8F49;
+	text-decoration: none;
+	color: black;
+}
+
+.color-btn-01 {
+	background: #ADAD66;
+	transition: all 0.25s;
+}
+.color-btn-01:hover {
+	background: #8D8D2B;
+	text-decoration: none;
+	color: black;
+}
+
+
+
+.list_form {
+	padding: 1em 1em 1em 2em;
+	list-style: square;
+	margin-top: 2em;
+	background: white;
+}
+/* DEV */
+.wrap-pao .content-dev-01,
+.wrap-pao .content-dev-02 {
+	padding: 2em;
+	height: 100%;
+	background: rgba(220,96,34,0.1)
+}
+
+.contact_dev {
+	background: url('img/banner_formation_developpement_web.jpg');
+	background-size: cover;
+	background-position: center;
+}
+
+#color_form {
+	border: solid 2px #dc6022;
+}
+
+body .wrap-pao .logo_dev {
+	width: 100%;
+}
+
+/* PHOTO */
+.wrap-pao .content-photo-01,
+.wrap-pao .content-photo-02 {
+	padding: 2em;
+	height: 100%;
+	background: rgba(141,141,43,0.1);
+}
+
+.contact_photo {
+	background: url('img/banner_formation_photo_video.jpg');
+	background-size: cover;
+	background-position: center;
+}
+
+#color_form_02 {
+	border: solid 2px #8D8D2B;
+}
+
+/*---------------------------------------------------------------------------*\
+		TYPOGRAPHIE
+\*---------------------------------------------------------------------------*/
+
+
+
+/*---------------------------------------------------------------------------*\
+		MEDIA QUERIES
+\*---------------------------------------------------------------------------*/
+@media only screen and (max-width:1300px) {
+	.info-titre li {
+		font-size:20px;
+	}
+	
+}
+
+
+@media only screen and (max-width:1024px) {
+	.home .panel-content .wrap {
+		padding-left:5%;
+		padding-right:5%;
+	}
+	
+	.info-titre, .wrap-contact, .content-wrap {
+		width:90%;
+	}
+	
+	.info-titre {
+		padding:2em 0.5em;
+	}
+	
+	.logo-formation {
+		width:135px;
+		margin:-125px auto 20px auto;
+	}
+
+	figure.effect-slide h2 {
+		font-size:23px;
+	}
+
+	figure.effect-slide h2::after {
+		width:110%;
+	}	
+}
+
+@media only screen and (max-width:768px) {
+	.info-titre li {
+		display:block;
+		font-size:25px;
+		text-align:center;
+	}
+	
+	.logo-formation {
+		display:none;
+	}
+	
+	.info-titre .titre-part {
+		float:none;
+	}
+	
+	.info-titre {
+		border:3px solid #10354b;
+	}
+	
+	.grid figure {
+		width:100%;
+	}
+	
+	figure.effect-slide h2 {
+		font-size:28px;
+	}
+	
+	figure.effect-slide h2::after {
+		width:130%;
+	}
+	
+	.coord-content, .form-content {
+		width:100%;
+	}
+	
+	.coord-content {
+		padding-right:0;
+		margin-bottom:2em;
+	}
+	
+	.logo-site img {
+		width:250px;
+	}
+	
+	body.has-header-image .site-title a {
+		font-size:60px;
+	}
+}
+
+
+@media only screen and (max-width:580px) {
+	body.has-header-image .site-title a {
+		font-size:42px;
+		letter-spacing:0;
+	}
+	
+	.home header .site-branding {
+		vertical-align:middle !important;
+	}
+	
+	.home .entry-content img {
+		width:70%;
+		margin:5% 15%;
+	}
+	
+	.grid figure figcaption {
+		padding:1em;
+	}
+	
+	.bouton-actu {
+		margin-bottom:1em;
+	}
+	
+	.form-nom, .form-prenom, .form-tel, .form-email {
+		width:100%;
+	}
+	
+	.letter-spacing {
+		letter-spacing:0;
+	}
+}
+
+
+@media only screen and (max-width:425px) {
+	.home .panel-content .wrap h2 {
+		font-size:25px;
+		margin-top:1em;
+	}
+	
+	figure.effect-slide h2 {
+		padding:0;
+		font-size:25px;
+	}
+	
+	.info-titre li {
+		font-size:22px;
+		font-weight:700;
+	}
+}
+
+@media only screen and (max-width:375px) {
+	body.has-header-image .site-title a {
+		letter-spacing:0;
+		font-size:34px;
+	}
+	
+	.letter-spacing {
+		letter-spacing:0;
+	}
+}
+
+@media only screen and (max-width:320px) {
+	figure.effect-slide h2 {
+		font-size:18px;
+	}
+}
+
+
+
+
+
+
+
+
+

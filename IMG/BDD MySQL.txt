@@ -1,0 +1,5 @@
+Serveur        : afamulticlientwp.mysql.db
+	Utilisateur    : afamulticlientwp
+	Nom de la base : afamulticlientwp
+
+	Mot de passe   : XzAFA48230Cl
